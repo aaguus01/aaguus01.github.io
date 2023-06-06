@@ -7,26 +7,55 @@
     src: url("../assets/fonts/Ubuntu/Ubuntu-Light.ttf");
 }
 
-/* Particles */
-header {
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 40px 0;
-    overflow: hidden;
+.letra-ubuntu {
+    font-family: Ubuntu-Font-Light, "Roboto Light", serif;
 }
 
-h1 {
-    font-family: Ubuntu-Font-Light, sans-serif;
-    font-size: 36px;
+/* Temas */
+
+.theme-black {
+    color: white;
 }
 
-#particle-container {
-    position: absolute;
+.theme-white{
+    color: black;
+}
+
+/* header */
+
+header{
+    height: 60vh;
+    background-image: url("../assets/img/fondoInicio.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.fondo-transparente-negro {
+    background-color: rgba(27, 23, 25, 0.8);
+    height: 70px;
+    margin: auto;
+    color: white;
+}
+
+/* NavBar */
+
+.color-blanco{
+    color: white;
+}
+.color-blanco:hover{
+    color: rgba(234, 225, 230, 0.07);
+}
+.navbar {
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    z-index: 100;
+}
+#custom-end{
+    justify-content: end;
+}
+.navbar-nav {
+    margin-left: auto;
 }
